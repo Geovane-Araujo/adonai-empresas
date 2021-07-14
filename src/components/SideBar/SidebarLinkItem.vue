@@ -34,6 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .itens{
+  transition: height .4s;
   height: 35px;
   background-color: rgba($color: #184e68, $alpha: 0.3);
   display: flex;
