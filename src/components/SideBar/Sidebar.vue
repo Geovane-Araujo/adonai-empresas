@@ -12,7 +12,7 @@
       </div>
       <div class="sidebar-content">
         <SideBarLink name="DashBoard" route="DashBoard"/>
-        <SideBarLink name="Atendimento" route="Atendimento"/>
+        <SideBarLink name="Atendimento" route="" :sub="sidebar.atendimento"/>
       </div>
       <div class="sidebar-footer">
       </div>
