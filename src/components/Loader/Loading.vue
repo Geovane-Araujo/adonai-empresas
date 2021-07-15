@@ -1,6 +1,6 @@
 <template>
   <div class="lala">
-    <loading v-model="isAtive" loader="spinner" color="#000" :can-cancel="true" :is-full-page="fullPage"/>
+    <loading v-model="isAtive" loader="spinner" color="#000" :can-cancel="true" :is-full-page="true"/>
   </div>
 </template>
 

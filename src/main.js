@@ -19,7 +19,7 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueApexCharts)
-Vue.use(PrimeVue)
+Vue.use(PrimeVue, { ripple: true })
 Vue.component('apexchart', VueApexCharts)
 new Vue({
   router,
