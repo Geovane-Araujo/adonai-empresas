@@ -11,9 +11,9 @@ const routes = [
     component: Home,
     children: [
       {
-        path: '/atendimento',
-        name: 'Atendimento',
-        component: () => import('../views/Pages/Atendimento.vue')
+        path: '/detalhes',
+        name: 'Detalhes',
+        component: () => import('../views/Pages/Detalhes.vue')
       },
       {
         path: '/dashboard',

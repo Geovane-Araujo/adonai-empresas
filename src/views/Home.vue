@@ -16,6 +16,11 @@ export default {
             name: 'Visão Geral',
             icon: 'dash',
             route: 'DashBoard'
+          },
+          {
+            name: 'Busca Detalhada',
+            icon: 'dash',
+            route: 'Detalhes'
           }
         ]
       }

@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="container content-card">
-      <card styless="colorcard" total="48M" description="Total Empresas Ativas"/>
+      <card styless="colorcard" total="48M" description="Total Empresas"/>
       <card styless="colorcard2" total="48M" description="Total Empresas Ativas"/>
+      <card styless="colorcard3" total="48M" description="Total Empresas Inativas"/>
     </div>
   </div>
 </template>
