@@ -1,13 +1,20 @@
 <template>
   <div>
-    <div class="content-card">
-      <card styless="colorcard"/>
+    <div class="container content-card">
+      <card styless="colorcard" total="48M" description="Total Empresas Ativas"/>
+      <card styless="colorcard2" total="48M" description="Total Empresas Ativas"/>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+    }
+  },
+  mounted () {
+  }
 }
 </script>
 
@@ -17,8 +24,7 @@ export default {
   width: 100%;
   max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-content: stretch;
-  background-color: rgb(29, 56, 80);
-  box-shadow: 1px 1px 1px #000;
 }
 </style>
