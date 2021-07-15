@@ -1,10 +1,10 @@
 <template>
   <div class="content">
-    <div class="header" @click="onSelectRoute">
-      <img src="./icons/dashboard.png" alt="">
+    <div class="header" @click="onSelectRoute(route,true)">
+      <i :class="icon"><div class="faa"></div></i>
       <h3>{{ name }}</h3>
     </div>
-    <SideBarLinkItem class="iten-side" :sub="sub" v-show="isColapesd"/>
+    <transition name="fade"><SideBarLinkItem class="iten-side" :sub="sub" v-show="isColapesd"/></transition>
   </div>
 </template>
 
@@ -14,10 +14,13 @@ export default {
   name: 'SideBarLink',
   data () {
     return {
-      isColapesd: false
+      isColapesd: this.colapsed
     }
   },
   props: {
+    colapsed: {
+      type: Boolean
+    },
     route: {
       type: String
     },
@@ -31,10 +34,14 @@ export default {
       type: Array
     }
   },
+  mounted () {
+    this.isColapesd = false
+    console.log(this.icon)
+  },
   methods: {
-    onSelectRoute () {
+    onSelectRoute (route, colapsed) {
       if (this.route !== '') {
-        this.$router.push({ name: this.name })
+        this.$router.push({ name: route })
       } else {
         if (this.isColapesd) {
           this.isColapesd = false
@@ -51,8 +58,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.iten-side{
-  transition: height .4s;
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+  // transition: height .1s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 i{
   color: #000000;
@@ -72,9 +83,6 @@ i{
     font-size: 1.2rem;
   }
 }
-.btn-itens{
-
-}
 .header:hover{
   background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
 }
@@ -84,6 +92,11 @@ i{
       visibility: hidden;
     }
     width: 14vw;
+    .faa{
+      visibility: visible;
+      width: 25px;
+      height: 40px;
+    }
   }
 }
 </style>

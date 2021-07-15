@@ -11,9 +11,9 @@
         </div>
       </div>
       <div class="sidebar-content">
-        <SideBarLink name="DashBoard" route="DashBoard"/>
-        <SideBarLink name="Atendimento" route="" :sub="sidebar.atendimento"/>
-        <SideBarLink name="Atendimento" route="" :sub="sidebar.atendimento"/>
+        <div v-for="item in sidebar.items" :key="item.name">
+          <SideBarLink :colapesd="false" :sub="item.sub" :name="item.name" :route="item.route" :icon="item.icon"/>
+        </div>
       </div>
       <div class="sidebar-footer">
       </div>
@@ -46,6 +46,9 @@ $isMobile: 50px;
   border-radius: 0px 20px 20px 0px;
   position: relative;
   height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
+  max-width: 100%;
   width: $isDesktop;
   box-shadow: 10px;
   background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
@@ -78,6 +81,7 @@ $isMobile: 50px;
 @media screen and (max-width: 600px) {
   .sidebar{
     width: $isMobile;
+    overflow: visible;
   }
   .sidebar-header{
     height: 0px;

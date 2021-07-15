@@ -5,17 +5,16 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import Sidebar from './components/SideBar/Sidebar.vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import VueApexCharts from 'vue-apexcharts'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import './assets/scss/app.scss'
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
-library.add(faUserSecret)
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.use(VueApexCharts)
 Vue.component('sidebar', Sidebar)
+Vue.component('apexchart', VueApexCharts)
 new Vue({
   router,
   store,
