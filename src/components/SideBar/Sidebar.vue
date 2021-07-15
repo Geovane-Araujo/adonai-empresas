@@ -31,6 +31,7 @@ $isDesktop: 15vw;
 $isMobile: 50px;
 
 .router{
+  padding: 7px;
   margin: 7px;
   margin-left: 0px;
   width: calc(100vw - 15vw);

@@ -13,39 +13,9 @@ export default {
       menu: {
         items: [
           {
-            name: 'Dashboard',
+            name: 'Visão Geral',
             icon: 'dash',
             route: 'DashBoard'
-          },
-          {
-            name: 'Cadastros',
-            icon: 'dash',
-            route: '',
-            sub: [
-              {
-                name: 'Clientes',
-                route: 'Atendimento'
-              },
-              {
-                name: 'Produtos',
-                route: 'Atendimento'
-              }
-            ]
-          },
-          {
-            name: 'Outros Cadastros',
-            icon: 'dash',
-            route: '',
-            sub: [
-              {
-                name: 'Clientes',
-                route: 'Atendimento'
-              },
-              {
-                name: 'Produtos',
-                route: 'Atendimento'
-              }
-            ]
           }
         ]
       }
