@@ -6,19 +6,25 @@ import router from './router'
 import store from './store'
 import PrimeVue from 'primevue/config'
 import VueApexCharts from 'vue-apexcharts'
-import 'primevue/resources/themes/saga-blue/theme.css'
+import VueMaterial from 'vue-material'
+import 'primevue/resources/themes/arya-green/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import './assets/scss/app.scss'
+
 import './global'
+
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+import './assets/scss/app.scss'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueApexCharts)
+Vue.use(VueMaterial)
 Vue.use(PrimeVue, { ripple: true })
 Vue.component('apexchart', VueApexCharts)
 new Vue({
