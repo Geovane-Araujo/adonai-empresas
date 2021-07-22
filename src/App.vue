@@ -9,6 +9,9 @@
 html{
   font-size: 13px;
 }
+body{
+  margin: 0px;
+}
 #app {
   height: 100vh;
   width: 100vw;
