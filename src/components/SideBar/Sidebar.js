@@ -2,7 +2,10 @@ import SideBarLink from './SidebarLink.vue'
 export default {
   data () {
     return {
-      iscolapsed: false
+      iscolapsed: false,
+      form: {
+        cnae: ''
+      }
     }
   },
   props: {

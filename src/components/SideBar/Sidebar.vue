@@ -20,15 +20,19 @@
     </div>
     <div>
       <div class="nav">
-        G
+        <div class="cnae">
+          <md-field>
+          <label>Cnae</label>
+          <md-input v-model="form.cnae"></md-input>
+          </md-field>
+        </div>
       </div>
-      <div class="router">
-      <transition name="animati">
-        <router-view/>
-      </transition>
+        <div class="router">
+        <transition name="animati">
+          <router-view/>
+        </transition>
+      </div>
     </div>
-    </div>
-
   </div>
 </template>
 
@@ -38,12 +42,17 @@
 $isDesktop: 15vw;
 $isMobile: 50px;
 
+.cnae{
+  width: 300px;
+}
 .nav{
-  height: 50px;
+  flex-direction: row-reverse;
+  padding: 0px;
+  height: 60px;
   width: 99%;
   margin-left: 10px;
   border-radius: 0px 0px 0px 10px;
-  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
+  background-color: rgba($color: #000000, $alpha: 0.0);
   box-shadow: 10px;
 }
 .animati-enter-active, .animati-leave-active {

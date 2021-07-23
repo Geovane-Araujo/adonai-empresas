@@ -6,15 +6,15 @@
           <label>Usuário</label>
           <md-input class="dd" v-model="form.user"></md-input>
         </md-field>
-         <md-field>
-        <label>Senha</label>
-        <md-input v-model="form.password" type="password"></md-input>
-      </md-field>
-      <div class="p-fluid">
-        <div class="p-field">
-          <Button label="Acessar"/>
+        <md-field>
+          <label>Senha</label>
+          <md-input v-model="form.password" type="password"></md-input>
+        </md-field>
+        <div class="p-fluid">
+          <div class="p-field">
+            <Button label="Acessar"/>
+          </div>
         </div>
-      </div>
       </div>
     </div>
       <vue-particles class="particles" color="#dedede"></vue-particles>
