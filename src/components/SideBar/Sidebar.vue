@@ -19,14 +19,14 @@
       </div>
     </div>
     <div>
-      <div class="nav">
+      <!-- <div class="nav">
         <div class="cnae">
           <md-field>
           <label>Cnae</label>
           <md-input v-model="form.cnae"></md-input>
           </md-field>
         </div>
-      </div>
+      </div> -->
         <div class="router">
         <transition name="animati">
           <router-view/>
@@ -68,13 +68,15 @@ $isMobile: 50px;
 }
 .router{
   padding: 7px;
-  margin: 7px;
+  margin-top: 20px;
   margin-left: 0px;
   width: calc(100vw - 15vw);
+  height: 96%;
   border-radius: 5px;
   overflow: auto;
   max-width: 100vw;
   max-height: 98vh;
+  background-color: #184e68;
 }
 .contennt{
   display: flex;

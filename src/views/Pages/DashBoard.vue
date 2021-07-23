@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div class="container content-card">
+    <div class="content-card">
       <card styless="colorcard" :total="totalgeral" description="Total Empresas"/>
       <card styless="colorcard2" :total="totalativas" description="Total Empresas Ativas"/>
       <card styless="colorcard3" :total="totalinativas" description="Total Empresas Inativas"/>
     </div>
     <div class="tabletop">
+      fg
     </div>
   </div>
 </template>
