@@ -4,11 +4,11 @@
       <div class="formulario">
         <md-field>
           <label>Usuário</label>
-          <md-input class="dd" v-model="noError"></md-input>
+          <md-input class="dd" v-model="form.user"></md-input>
         </md-field>
          <md-field>
         <label>Senha</label>
-        <md-input v-model="password" type="password"></md-input>
+        <md-input v-model="form.password" type="password"></md-input>
       </md-field>
       <div class="p-fluid">
         <div class="p-field">

@@ -4,6 +4,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    redirect: { name: 'Detalhes', params: { name: 'Detalhes' } },
     children: [
       {
         path: '/detalhes',

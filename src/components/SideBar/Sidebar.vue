@@ -19,7 +19,9 @@
       </div>
     </div>
     <div class="router">
-      <router-view/>
+      <transition>
+        <router-view/>
+      </transition>
     </div>
   </div>
 </template>
@@ -30,6 +32,10 @@
 $isDesktop: 15vw;
 $isMobile: 50px;
 
+.particles{
+  position: relative;
+  z-index: 0;
+}
 .router{
   padding: 7px;
   margin: 7px;
