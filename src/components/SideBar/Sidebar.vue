@@ -18,11 +18,17 @@
       <div class="sidebar-footer">
       </div>
     </div>
-    <div class="router">
-      <transition>
+    <div>
+      <div class="nav">
+        G
+      </div>
+      <div class="router">
+      <transition name="animati">
         <router-view/>
       </transition>
     </div>
+    </div>
+
   </div>
 </template>
 
@@ -32,6 +38,21 @@
 $isDesktop: 15vw;
 $isMobile: 50px;
 
+.nav{
+  height: 50px;
+  width: 99%;
+  margin-left: 10px;
+  border-radius: 0px 0px 0px 10px;
+  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
+  box-shadow: 10px;
+}
+.animati-enter-active, .animati-leave-active {
+  transition: opacity .5s;
+  // transition: height .1s;
+}
+.animati-enter, .animati-leave-to {
+  opacity: 0;
+}
 .particles{
   position: relative;
   z-index: 0;
