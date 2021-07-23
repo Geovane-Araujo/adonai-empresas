@@ -10,9 +10,14 @@
         <label>Senha</label>
         <md-input v-model="password" type="password"></md-input>
       </md-field>
-      <Button label="Acessar"/>
+      <div class="p-fluid">
+        <div class="p-field">
+          <Button label="Acessar"/>
+        </div>
+      </div>
       </div>
     </div>
+      <vue-particles class="particles" color="#dedede"></vue-particles>
   </div>
 </template>
 
@@ -20,9 +25,14 @@
 </script>
 
 <style lang="scss" scoped>
+.particles{
+  height: 100%;
+  width: 100%;
+}
 .content{
   height: 100vh;
   width: 100vw;
+  display: flex;
 }
 .login{
   border-radius: 13px;

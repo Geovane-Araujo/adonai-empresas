@@ -7,6 +7,7 @@ import store from './store'
 import PrimeVue from 'primevue/config'
 import VueApexCharts from 'vue-apexcharts'
 import VueMaterial from 'vue-material'
+import VueParticles from 'vue-particles'
 import 'primevue/resources/themes/arya-green/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
@@ -25,6 +26,7 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueApexCharts)
 Vue.use(VueMaterial)
+Vue.use(VueParticles)
 Vue.use(PrimeVue, { ripple: true })
 Vue.component('apexchart', VueApexCharts)
 new Vue({
