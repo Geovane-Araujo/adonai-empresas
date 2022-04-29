@@ -21,4 +21,9 @@ Projetos Relacionados:
 
 [Extração e Organização dos dados](https://github.com/Geovane-Araujo/organiza_cnpj) - Novo Repositório
 
+[Ambiente Dos dados](http://empresas.adonaisoft.com.br)
+
+login:admin
+senha: 123
+
 
